@@ -1,0 +1,28 @@
+---
+layout: page
+title: F# end to end
+---
+<h1><a name="Literate-sample" class="anchor" href="#Literate-sample">Literate sample</a></h1>
+<p>run it in Visual Studio or MonoDevelop).</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="c">/// The Hello World of functional languages!</span>
+<span class="k">let</span> <span class="k">rec</span> <span class="i">factorial</span> <span class="i">x</span> <span class="o">=</span> 
+  <span class="k">if</span> <span class="i">x</span> <span class="o">=</span> <span class="n">0</span> <span class="k">then</span> <span class="n">1</span> 
+  <span class="k">else</span> <span class="i">x</span> <span class="o">*</span> (<span class="i">factorial</span> (<span class="i">x</span> <span class="o">-</span> <span class="n">1</span>))
+
+<span class="k">let</span> <span class="i">f10</span> <span class="o">=</span> <span class="i">factorial</span> <span class="n">10</span>
+</code></pre></td>
+</tr>
+</table>
+<h2><a name="Hiding-code" class="anchor" href="#Hiding-code">Hiding code</a></h2>
+<p>If you want to include some code in the source code,
+but omit it from the output, you can use the <code>hide</code>
+command.</p>
+
+
