@@ -1,4 +1,4 @@
-FsBlog
+VLSI Testing Blog
 ======
 
-A simple static fsharp blog
+Testing in F#
