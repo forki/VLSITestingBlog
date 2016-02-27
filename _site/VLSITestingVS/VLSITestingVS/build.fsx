@@ -6,5 +6,5 @@ let source = @"C:\Users\pnsak\Documents\GitHub\VLSITestingBlog\"
 let codeDirectory = Path.Combine(__SOURCE_DIRECTORY__, "posts/")
 let postsDirectory = Path.Combine(source, "_posts/")
 
-Literate.ProcessDirectory(codeDirectory, outputDirectory = postsDirectory, 
+Literate.ProcessDirectory(codeDirectory, outputDirectory = postsDirectory,
     format = OutputKind.Html, lineNumbers = true, generateAnchors = true)
